@@ -15,6 +15,7 @@ const App = () => {
       <Button
         title='Press me'
         onPress={() => setPressedCount(pressedCount + 1)}
+        disabled={pressedCount >= 3}
       />
     </View>
   );
